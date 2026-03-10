@@ -96,7 +96,7 @@ We have exciting plans for enhancing this project:
 
 ## 👤 Author
 
-**Your Name**
+**Koushik Debnath**
 
 - GitHub: https://github.com/koushikos
 - LinkedIn: https://www.linkedin.com/in/koushik-debnath-9513b4354/
@@ -110,4 +110,5 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 ⭐ **If you found this project helpful, please give it a star!**
+
 
