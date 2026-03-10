@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Input Form Section -->
+        <div class="form-section">
+            <h1>Portfolio Generator</h1>
+            <p class="subtitle">Fill in your details to create your portfolio</p>
+            
+            <form id="portfolioForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="John Doe" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="title">Professional Title</label>
+                    <input type="text" id="title" placeholder="Web Developer" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bio">About Me</label>
+                    <textarea id="bio" rows="4" placeholder="Tell us about yourself..." required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="skills">Skills (comma separated)</label>
+                    <input type="text" id="skills" placeholder="HTML, CSS, JavaScript, React">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="john@example.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="github">GitHub URL</label>
+                    <input type="url" id="github" placeholder="https://github.com/username">
+                </div>
+                
+                <div class="form-group">
+                    <label for="linkedin">LinkedIn URL</label>
+                    <input type="url" id="linkedin" placeholder="https://linkedin.com/in/username">
+                </div>
+                
+                <div class="projects-section">
+                    <h3>Projects</h3>
+                    <div id="projectsContainer">
+                        <div class="project-entry">
+                            <input type="text" class="project-name" placeholder="Project Title">
+                            <textarea class="project-description" rows="2" placeholder="Project Description"></textarea>
+                            <input type="url" class="project-link" placeholder="Project URL (optional)">
+                        </div>
+                    </div>
+                    <button type="button" id="addProjectBtn" class="btn-secondary">+ Add Another Project</button>
+                </div>
+            </form>
+        </div>
+        
+        <!-- Preview Section -->
+        <div class="preview-section">
+            <div class="preview-header">
+                <h2>Live Preview</h2>
+            </div>
+            
+            <div id="portfolioPreview" class="portfolio-preview">
+                <!-- Profile Section -->
+                <header class="portfolio-header">
+                    <div class="profile-photo">
+                        <div class="photo-placeholder">👤</div>
+                    </div>
+                    <h1 id="previewName">Your Name</h1>
+                    <p id="previewTitle" class="portfolio-title">Your Professional Title</p>
+                </header>
+                
+                <!-- About Section -->
+                <section class="portfolio-section">
+                    <h2>About Me</h2>
+                    <p id="previewBio">Your bio will appear here...</p>
+                </section>
+                
+                <!-- Skills Section -->
+                <section class="portfolio-section">
+                    <h2>Skills</h2>
+                    <div id="previewSkills" class="skills-container">
+                        <span class="skill-tag">Your Skills</span>
+                    </div>
+                </section>
+                
+                <!-- Projects Section -->
+                <section class="portfolio-section">
+                    <h2>Projects</h2>
+                    <div id="previewProjects" class="projects-container">
+                        <p class="no-content">No projects added yet</p>
+                    </div>
+                </section>
+                
+                <!-- Contact Section -->
+                <section class="portfolio-section">
+                    <h2>Contact</h2>
+                    <div class="contact-links">
+                        <a id="previewEmail" href="#" class="contact-link">📧 Email</a>
+                        <a id="previewGithub" href="#" target="_blank" class="contact-link">🐙 GitHub</a>
+                        <a id="previewLinkedin" href="#" target="_blank" class="contact-link">💼 LinkedIn</a>
+                    </div>
+                </section>
+                
+                <footer class="portfolio-footer">
+                    <p>Generated with Portfolio Website Generator</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
